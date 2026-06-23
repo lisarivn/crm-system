@@ -20,4 +20,5 @@ from django.urls import include, path
 urlpatterns = [
     path("admin/", admin.site.urls), # admin panel url
     path("clients/", include("apps.clients.urls")), # all urls from clients app will be under /clients/ path
+    path("deals/", include("apps.deals.urls")), # all urls from deals app will be under /deals/ path
 ]
