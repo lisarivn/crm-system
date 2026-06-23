@@ -5,4 +5,4 @@ from .models import Deal
 def deals_list(request):
     # render HTML template with deals data
     deals = Deal.objects.all()
-    return render(request, "deals/deals_list.html")
+    return render(request, "deals/deals_list.html", {"deals": deals})
