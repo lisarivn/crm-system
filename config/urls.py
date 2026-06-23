@@ -21,4 +21,5 @@ urlpatterns = [
     path("admin/", admin.site.urls), # admin panel url
     path("clients/", include("apps.clients.urls")), # all urls from clients app will be under /clients/ path
     path("deals/", include("apps.deals.urls")), # all urls from deals app will be under /deals/ path
+    path("notes/", include("apps.notes.urls")), # all urls from notes app will be under /notes/ path
 ]
